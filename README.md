@@ -145,6 +145,7 @@ Note: Full gene lists are not displayed due to data sensitivity.
 ## Clinical Validation (Survival Analysis)
 
 ![Survival Plot](survival_plot.png)
+Higher expression of the selected gene is associated with reduced overall survival, indicating potential prognostic relevance.
 
 To assess clinical relevance, survival analysis was performed using publicly available datasets:
 
