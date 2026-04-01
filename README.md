@@ -84,5 +84,15 @@ This project also includes extended downstream analyses such as:
 
 Note: Some visualizations are not displayed to avoid sharing sensitive or unpublished data.
 
+## 🔬 Translational Relevance
+
+This pipeline goes beyond standard differential expression by integrating:
+
+- Functional pathway analysis (GSEA / ssGSEA)
+- Drug-response signature identification (Venetoclax resistance)
+- Clinical validation using survival analysis (TCGA)
+
+This is a translational workflow connecting molecular data to clinical outcomes.
+
 ## Author
 Hager Salah Abouelnaga
