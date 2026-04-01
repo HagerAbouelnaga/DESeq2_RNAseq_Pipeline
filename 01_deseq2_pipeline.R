@@ -300,7 +300,29 @@ ggsave(file.path(output_dir, paste0("Volcano_", contrast_name, ".png")), width =
 
 } 
 
- 
+# Extract significant genes
+sig_genes <- res_df %>%
+  filter(!is.na(padj), padj < 0.05)
+
+# Upregulated genes
+up_genes <- sig_genes %>%
+  filter(log2FoldChange > 0)
+
+# Downregulated genes
+down_genes <- sig_genes %>%
+  filter(log2FoldChange < 0)
+
+# Top 20 genes
+top20_up <- up_genes %>%
+  arrange(desc(log2FoldChange)) %>%
+  head(20)
+
+top20_down <- down_genes %>%
+  arrange(log2FoldChange) %>%
+  head(20)
+
+write.csv(top20_up, "top20_upregulated.csv")
+write.csv(top20_down, "top20_downregulated.csv")
 
 #------------------------- 
 
