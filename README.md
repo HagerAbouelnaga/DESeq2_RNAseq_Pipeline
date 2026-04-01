@@ -35,13 +35,13 @@ It includes:
 
 ## Gene Filtering and Ranking
 
-Significant genes are identified based on adjusted p-value (padj < 0.05).
+Significant genes are identified based on adjusted p-value (padj < 0.05) thresholds.
 
-Genes are further categorized into:
+Genes are further classified into:
 - Upregulated genes (log2FoldChange > 0)
 - Downregulated genes (log2FoldChange < 0)
 
-Top genes can be extracted and ranked based on fold change or statistical significance.
+Top genes are extracted and ranked based on fold change or statistical significance.
 
 ## Example Output
 
